@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "kratos-base-template/api/provider/v1;v1";
+option java_multiple_files = true;
+option java_package = "provider.v1";
+option objc_class_prefix = "APIProviderV1";
+/**
+命令
+ kratos proto client api/provider/v1/error_reason.proto
+ */
+enum ErrorReason {
+  UNKNOWN_ERROR           = 0;
+  EVENT_NOT_SUPPORT       = 100;
+  SUCCESS                 = 200;
+  SERVER_ERROR            = 500;
+  RESOURCE_NOT_FIND       = 401;
+  WITHOUT_PERMISSION      = 403;
+  MISSING_PARAMETER       = 501;
+  INVALID_PARAMETER       = 502;
+}

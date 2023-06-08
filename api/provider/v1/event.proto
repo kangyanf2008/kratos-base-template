@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package provider.v1;
+
+option go_package = "kratos-base-template/api/provider/v1;v1";
+option java_multiple_files = true;
+option java_package = "provider.v1";
+option objc_class_prefix = "APIProviderV1";
+/**
+命令
+ kratos proto client api/provider/v1/event.proto
+ */
+enum EVENT_CODE {
+  ADD_USER     = 0;  //添加用户
+  UPDATE_USER  = 1;  //更新用户
+  GET_USER     = 3;  //查询用户
+  LIST_USER    = 4;  //用户列表
+}
